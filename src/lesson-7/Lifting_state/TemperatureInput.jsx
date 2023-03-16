@@ -17,3 +17,5 @@ export default function TemperatureInput({ temperature, scale, onTemperatureChan
         </fieldset>
     );
 }
+
+
