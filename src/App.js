@@ -1,9 +1,11 @@
 import './App.css';
-import Clock from './lesson-6/From_Handling/Clock';
+import Calculator from "./lesson-7/Lifting_state/Calculator"
 function App() {
   return (
     <div className="App">
-       <Clock/>
+
+       <Calculator/>
+
     </div>
   );
 }
