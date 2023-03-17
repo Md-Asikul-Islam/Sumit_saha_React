@@ -1,12 +1,11 @@
 import './App.css';
-import Text from './lesson-8/Composition vs Inheritance/Composition/Text';
-import Emoji from './lesson-8/Composition vs Inheritance/Composition/Emoji';
+import Home from './lesson-9/part-2/Home';
+import "./lesson-9/part-2/Style.css"
+
 function App() {
   return (
     <div className="App">
-      <Emoji>{}
-         (addEmoji) => <Text addEmoji = {addEmoji}/>
-      </Emoji>
+      <Home/>
 
     </div>
   );

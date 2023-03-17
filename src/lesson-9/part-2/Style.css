@@ -1,0 +1,13 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    }
+    .inc{
+    background-color: rgb(58, 129, 129);
+    
+    
+    }
+    .dec{
+        background-color:  rgb(58, 129, 129);
+    }
