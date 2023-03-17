@@ -1,11 +1,9 @@
 import './App.css';
-import Calculator from "./lesson-7/Lifting_state/Calculator"
+import ClickCounter from './lesson-9/Higher_order_function/ClickCounter';
 function App() {
   return (
     <div className="App">
-
-       <Calculator/>
-
+       <ClickCounter/>
     </div>
   );
 }
