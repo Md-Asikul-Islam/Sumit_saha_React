@@ -1,9 +1,13 @@
 import './App.css';
-import ClickCounter from './lesson-9/Higher_order_function/ClickCounter';
+import Text from './lesson-8/Composition vs Inheritance/Composition/Text';
+import Emoji from './lesson-8/Composition vs Inheritance/Composition/Emoji';
 function App() {
   return (
     <div className="App">
-       <ClickCounter/>
+      <Emoji>{}
+         (addEmoji) => <Text addEmoji = {addEmoji}/>
+      </Emoji>
+
     </div>
   );
 }

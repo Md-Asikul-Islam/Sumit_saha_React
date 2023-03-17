@@ -1,10 +1,10 @@
 import React from 'react';
 
 export default class Emoji extends React.Component {
-    addEmoji = (text, emoji) => `${emoji} ${text} ${emoji}`;
+    addBracket = (text) => `[ ${text} ]`;
 
     render() {
         // eslint-disable-next-line react/destructuring-assignment
-        return this.props.children({ addEmoji: this.addEmoji });
+        return this.props.children({ addBracket: this.addBracket });
     }
 }
