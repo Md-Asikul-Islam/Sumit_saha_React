@@ -19,24 +19,60 @@ const withCounter = (OriginalComponent) => {
 };
 
 export default withCounter;
+
+
 // ****
 
 // --একই কোড যেন বার বার না লিখতে হয় 
 
 // -- একই কোড যেন ভিন্ন ভিন্ন component এ  লিখতে না হয় এই জন্যই মূলত Hiher order component ববহার করা ।
 
-// ১। Hiher order component মুলত একটা component, যেটা রিটার্ন করে অন্য আরেকটা component এবং component কে 
+// ১। Hiher order component মুলত এমন একটা ফাংশন যেটা একটা  component কে আর্গুমেন্ট হিসাবে গ্রহন করবে 
 
-// প্যারামিটার হিসাবে গ্রহন করে । যদি আমরা একটা component কে ,   অন্য আরেকটা functional  component 
+// OriginalComponent নামে  ।  এখন ফাংশন বডির ভিতরে NewComponent নামে একটা নতুন  component  তৈরি করব ,   
 
-// প্যারামিটার হিসাবে  পাস করি । তবে তাকে আমরা  Hiher order component বলব । যেমন - withCounter
+// যেটা  রেনডার ফাংশনে রিটার্ন করবে আর্গুমেন্টকে jsx Element হিসেবে  ।  আবার NewComponent নামে বানানো  
 
-// (HoverCounter);
+// component টা রিটার্ন করব Newcomponent
 
 
 
+//  । 
+
+
+//  যেমন - 
+
+
+// import React from 'react';
+
+// const withCounter = (OriginalComponent) => {
+//     class NewComponent extends React.Component {
+//         render(){
+//             return <OriginalComponent/>
+//         }
+//     }
+
+//     return NewComponent
+
+// }
+
+// export default withCounter;
+
+
+// ২। count এবং incrementCount এর ভ্যালু আমরা props আকারে পাস করব <OriginalComponent  count={} 
+
+// incrementCount ={} /> 
+
+
+// ৩। এরপর আমরা যে ফাইল বাঁ Component এ HOC ব্যবহার করব সেই ফাইলে  import করতেঁ হবে HOC । তারপর export default withCounter(ফাইল বাঁ Component)  
+
+// ৪। এখন ফাইল বাঁ Component গুলোতেঁ এক্সেস করতেঁ  <button type="button" onClick={incrementCount}>
+// Clicked {count} times
+// </button>
 
 
 
 
 // *****
+
+

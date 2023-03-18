@@ -1,10 +1,13 @@
 import './App.css';
-import HocCounter from './lesson-9/Higher_order_Component/Part-1/withCounter';
+import HoverConuter from './lesson-9/Higher_order_Component/Part-1/HoverConuter';
+
+import ClickCounter from './lesson-9/Higher_order_Component/Part-1/ClickCounter';
 
 function App() {
   return (
     <div className="App">
-     <HocCounter/>
+    <HoverConuter/>
+    <ClickCounter/>
 
     </div>
   );

@@ -1,4 +1,4 @@
-import withCounter from './withCounter';
+import withCounter from "./withCounter";
 
 const ClickCounter = (props) => {
     const { count, incrementCount } = props;
