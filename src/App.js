@@ -1,11 +1,10 @@
 import './App.css';
-import Home from './lesson-9/part-2/Home';
-import "./lesson-9/part-2/Style.css"
+import HocCounter from './lesson-9/Higher_order_Component/Part-1/withCounter';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+     <HocCounter/>
 
     </div>
   );
