@@ -1,14 +1,11 @@
 import './App.css';
-import HoverConuter from './lesson-9/Higher_order_Component/Part-1/HoverConuter';
+import Calculator from './lesson-7/Lifting_state/Calculator';
 
-import ClickCounter from './lesson-9/Higher_order_Component/Part-1/ClickCounter';
 
 function App() {
   return (
     <div className="App">
-    <HoverConuter/>
-    <ClickCounter/>
-
+      <Calculator/>
     </div>
   );
 }

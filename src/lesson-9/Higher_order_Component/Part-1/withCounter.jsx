@@ -31,9 +31,7 @@ export default withCounter;
 
 // OriginalComponent নামে  ।  এখন ফাংশন বডির ভিতরে NewComponent নামে একটা নতুন  component  তৈরি করব ,   
 
-// যেটা  রেনডার ফাংশনে রিটার্ন করবে আর্গুমেন্টকে jsx Element হিসেবে  ।  আবার NewComponent নামে বানানো  
-
-// component টা রিটার্ন করব Newcomponent
+// যেটা  রেনডার ফাংশনে রিটার্ন করবে আর্গুমেন্টকে jsx Element হিসেবে  ।  আবার NewComponent নামে বানানো  component টা রিটার্ন করব Newcomponent
 
 
 
