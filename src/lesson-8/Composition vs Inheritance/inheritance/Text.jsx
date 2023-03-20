@@ -1,17 +1,16 @@
-import Emoji from "./Emoji"
+import Emoji from './Emoji';
 
 export default class Text extends Emoji {
+    // eslint-disable-next-line no-useless-constructor
     constructor(props) {
-      super(props);
+        super(props);
     }
-  render() {
-    let decoratedText = this.addEmoji("i am javascript language", "");
-    return (
-      super.render(decoratedText)
-    )
-  }
-}
 
+    render() {
+        const decoratedText = this.addEmoji('I am JavaScript Language', '💜');
+        return super.render(decoratedText);
+    }
+}
 
 // ****
 // ১। Emoji class component, হচ্ছে প্যারেন্ট component

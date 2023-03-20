@@ -41,6 +41,10 @@
 
 // ************
 
+// চাইল্ড component থেকে প্যারেন্ট component এ ডাটা পাঠানোর জন্য  state lifting 
+
+// করতে করতে হবে । 
+
 // ১।  <BoilingVerdict celsius={parseFloat(temperature)}  /> jsx element টি একটি props রিসিভ করে celsius
 // নামে এবং সেটা state এর  temperature : " " পাবে । স্ট্রিং হিসেবে রাখার জন্য parseFloat করা হয়েছে ।
 
@@ -149,34 +153,5 @@
 // হবে ।
 
 
-import React from 'react'
-import todos from "./todos"
-
-function Calculator() {
-    const todos = ["todo1" , "todo2"]
-  return (
-    <div>
-       <Todos todos />
-    </div>
-  )
-}
-
-export default Calculator
-
-
-
-// another file Todos
-
-import React from 'react'
-const Todos = (props) => {
-    return(
-        <div>
-           {props.todos.map((todo) => (
-            <p key={index}>{todo}</p>
-           ))}
-        </div>
-    )
-}
-export default Todos ;
 
 
