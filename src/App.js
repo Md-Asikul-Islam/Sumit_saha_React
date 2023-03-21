@@ -1,21 +1,24 @@
 import './App.css';
-import Click from './lesson-10/Render_Props/Click';
-import Hover from './lesson-10/Render_Props/Hover';
-import Counter from './lesson-10/Render_Props/Render/Counter';
+import ClickCounter from './Render_Props/ClickCounter';
+import HoverCounter from './Render_Props/HoverCounter';
+import Counter from './lesson-10/Render_Props/Common_Part/Counter';
 
 
 function App() {
   return (
-    <div className="App">
-       {/* <Click/>
-       <Hover/> */}
-
-       <Counter 
-       render = {(counter, incrementCount) => (
-       <Click count ={counter} incrementCount ={incrementCount} /> )}
-       </div>
-       
-  
-
+    <div>
+      <Counter>
+         {(counter, incrementCount) => (
+          <ClickCounter count = {counter} incrementCount ={incrementCount} />
+         )}
+      </Counter>
+      <Counter>
+         {(counter, incrementCount) => (
+          <HoverCounter count={counter} incrementCount={incrementCount} />
+         )}
+      </Counter>
+    </div>
+  )
+}
 export default App;
 
