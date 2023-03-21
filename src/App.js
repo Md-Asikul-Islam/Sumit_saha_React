@@ -1,11 +1,12 @@
 import './App.css';
-import Calculator from './lesson-7/Lifting_state/Calculator';
-
+import ClickCounter from './lesson-10/Reder_props/ClickCounter';
+import Hover from "./lesson-10/Reder_props/Hover"
 
 function App() {
   return (
     <div className="App">
-      <Calculator/>
+      <ClickCounter/>
+      <Hover/>
     </div>
   );
 }
