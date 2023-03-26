@@ -10,8 +10,9 @@ export default function Content() {
             <Counter>
                 {(counter, incrementCount) => {
                       return <ThemeContext.Consumer>
-                         { ({theme }) =>  <HoverCounter
+                         { ({theme ,switchTheme}) =>  <HoverCounter
                       count={counter} incrementCount ={incrementCount} theme = {theme}
+                      switchTheme = {switchTheme}
                      />}
                       </ThemeContext.Consumer>
                 }}

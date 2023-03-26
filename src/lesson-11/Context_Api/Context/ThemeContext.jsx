@@ -1,7 +1,5 @@
-import React from 'react';
+import React from "react";
 
-const themeContext = React.createContext({
-    theme :" light "
-});
+const ThemeContext = React.createContext();
 
-export default themeContext;
+export default ThemeContext;
