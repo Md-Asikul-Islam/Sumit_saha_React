@@ -1,10 +1,11 @@
 import React from 'react'
-import TodosTwo from './lesson-12/Hooks/UseState/TodosTwo'
+import MyComponent from './lesson-12/Hooks/UseEffect-2/MyComponent'
+
 
 function App() {
   return (
     <div>
-        <TodosTwo/>
+       <MyComponent/>
     </div>
   )
 }
