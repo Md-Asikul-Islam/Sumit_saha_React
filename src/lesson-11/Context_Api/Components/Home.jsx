@@ -40,3 +40,9 @@ export default class  App extends React.Component {
   }
  
 }
+
+
+// ****
+// এই কোড গুলা  App.js ফাইলে পেস্ট করতে হবে 
+
+// *****
