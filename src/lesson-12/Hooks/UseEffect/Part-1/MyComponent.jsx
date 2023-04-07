@@ -18,7 +18,6 @@ useEffect(() =>{
 },[])
 
 
-
 const addClick = () => {
     setCount((prevCount) => prevCount + 1);
 }
@@ -37,7 +36,6 @@ const addClick = () => {
 
 export default MyComponent
 
-
 // *******
 // ১। useEffect() একটা সিম্পল ফাংশন যার ভিতরে আর একটা ফাংশন পাবে যেটা প্রত্যেক render() এ useEffect() কে  রান করাবে  ।
 
@@ -48,6 +46,5 @@ export default MyComponent
 // ২। useEffect() একটা সিম্পল ফাংশন যার ভিতরে প্রথম প্যারামিটারে  একটা ফাংশন পাবে এবং দ্বিতীয়  প্যারামিটারে একটা অ্যাঁরে পাবে ।  অ্যাঁরে ফাকা থাকলে একবারই useEffect() রেনডার হবে আবার অ্যাঁরেতেঁ  বলে দেওয়া যাবে কোন জিনিস পরিবর্তন হলে useEffect() কাজ করবে । এই অ্যাঁরে টা আসলে ডিপেনডেনসি অ্যাঁরে 
 
 // ৩। Class component এ  componentWillUnMount ব্যবহার করা হতো মুলত কোন একটা component clear করার জন্য এই কাজটা আমরা ফাংশনাল component এ useEffect() ফাংশনের ভিতরে আমরা যে ফাংশনটা দিব সেটা যদি রিটার্ন  ফাংশন হয় তবে সেটা componentWillUnMount  মত কাজ করবে ।
-
 
 // ********
