@@ -1,10 +1,9 @@
 import React from 'react'
-import Form from './lesson-12/Hooks/UseRef/Part-1/Form'
-
+import Counter from './lesson-12/Hooks/UseReducer/Part-1/Counter'
 function App() {
   return (
     <div>
-        <Form/>
+       <Counter/>
     </div>
   )
 }
