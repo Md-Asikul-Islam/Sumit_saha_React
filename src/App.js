@@ -1,9 +1,10 @@
 import React from 'react'
-import ComplexCounter from './lesson-12/Hooks/UseReducer/Part-1/ComplexCounter'
+import LayoutComponentTwo from './lesson-12/Hooks/CustomHook/Part-1/LayoutComponentTwo'
+
 function App() {
   return (
     <div>
-       <ComplexCounter/>
+       <LayoutComponentTwo/>
     </div>
   )
 }
